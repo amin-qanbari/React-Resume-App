@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import "./Profile.css"
 
 const Profile = () => {
   return (
@@ -7,6 +8,8 @@ const Profile = () => {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
+
+            <div className="colz-icon">
             <a href="https://t.me/amin_qanbarii">
               <i className="fa fa-telegram"></i>
             </a>
@@ -19,6 +22,7 @@ const Profile = () => {
             <a href="https://www.github.com/amin-qanbari">
               <i className="fa fa-github"></i>
             </a>
+            </div>
           </div>
 
           <div className="profile-details-name">
@@ -61,11 +65,19 @@ const Profile = () => {
               </span>
             </span>
           </div>
+
           <div className="profile-options">
             <button className="btn primary-btn">Hire Me</button>
             <a href="resume-file-amin.pdf" download="resume-file-amin.pdf">
                   <button className="btn highlighted-btn">Get Resume</button>
             </a>
+          </div>
+
+        </div>
+
+        <div className="profile-picture">
+          <div className="profile-picture-background">
+
           </div>
         </div>
       </div>
