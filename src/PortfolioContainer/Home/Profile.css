@@ -58,7 +58,7 @@
 .profile-picture-background{
 height: 92%;
 width: 92%;
-background-image: url(../../assets/Home/IMG_20220401_214631_218.jpg);
+background-image: url('../../assets/Home/IMG_20220401_214631_218.jpg');
 background-size: cover;
 border-radius: 50%;
 background-repeat: no-repeat;
@@ -73,7 +73,7 @@ transition: 1s ease-out;
     padding: 8px;
     padding-left: 0px;
 }
-.colz .colz-icon:hover{
+.colz .colz-icon i:hover{
     transform: scale(1.5);
 }
 
