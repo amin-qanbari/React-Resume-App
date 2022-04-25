@@ -84,13 +84,7 @@ export default function Resume(props) {
       hrefProject:
         "https://react-shopping-site-ui-design-redux-main.vercel.app/",
     },
-    {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration",
-      subHeading: "Technologies Used: HTML, CSS, PHP, Bootstrap.",
-    },
+
   ];
 
   const resumeDetails = [
@@ -98,7 +92,7 @@ export default function Resume(props) {
       <ResumeHeading
         heading={"Azad University"}
         subHeading={"BACHELOR OF PETROLEUM ENGIINEERING"}
-        fromDate={"2013"}
+        fromDate={"2014"}
         toDate={"2017"}
       />
 

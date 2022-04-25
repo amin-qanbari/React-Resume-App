@@ -16,7 +16,7 @@
 }
 .about-me-profile {
   width: 50%;
-  background-image: url("../../assets/AboutMe/CYMERA_20220401_173100.jpg");
+  background-image: url("../../assets/AboutMe/IMG_20220401_214631_218.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,7 +30,7 @@
   font-size: 12px;
 }
 .about-me-highlights {
-  margin: 50px 0;
+  margin: 70px 0;
 }
 .highlght-heading {
   font-family: "Poppins Bold";
