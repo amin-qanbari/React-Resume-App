@@ -4,22 +4,26 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
 
-export default function AboutMe(props){
+export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   const SCREEN_CONSTSANTS = {
     description:
-      "Backend web and mobile developer with background knowledge of Php and java, along with a knack of building applications with utmost efficiency. Willing to be an asset for an organization.",
+      "Meticulous web developer with over 2 years of front end experience and passion for responsive website design and a firm believer in the mobile-first approach. Web Programming & Design certified.",
     highlights: {
       bullets: [
-        "Backend web and application development",
-        "Php, html, css",
-        "React and React Native",
-        "Java Development",
+        "Front end web and application development",
+        "HTML, CSS(flexBox ,Grid) , Sass",
+        "Bootstrap",
+        "Javascript",
+        "React.js",
+        "Redux",
         "Managing database",
+        "Responsive design"
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -33,9 +37,12 @@ export default function AboutMe(props){
     ));
   };
 
-  return(
-    <div className='about-me-container screen-container fade-in' id={props.id || ""}>
-       <div className="about-me-parent">
+  return (
+    <div
+      className="about-me-container screen-container fade-in"
+      id={props.id || ""}
+    >
+      <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
@@ -66,5 +73,4 @@ export default function AboutMe(props){
       </div>
     </div>
   );
-  
 }
