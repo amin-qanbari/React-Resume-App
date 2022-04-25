@@ -109,13 +109,13 @@ export default function Resume(props){
               <div className="experience-container">
                 <ResumeHeading
                   heading={"Freelance"}
-                  subHeading={"JAVA DEVELOPER"}
+                  subHeading={"FRONT END DEVELOPER"}
                   fromDate={"2021"}
                   toDate={"2022"}
                 />
                 <div className="experience-description">
                   <span className="resume-description-text">
-                    Work as a JAVA programmer
+                    Work as a Front end Developer
                   </span>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Resume(props){
               />
               <ResumeHeading
                 heading="Music"
-                description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+                description="Listening to soothing music is something i can compromise with, skimming through soothing songs is at times the best stress reliever that i can get my hands on."
               />
               <ResumeHeading
                 heading="Competitive Gaming"
