@@ -53,14 +53,14 @@ export default function Resume(props){
         
           //here we have
           const programmingSkillsDetails = [
-            { skill: "JavaScript", ratingPercentage: 50 },
-            { skill: "React JS", ratingPercentage: 50 },
-            { skill: "React Native", ratingPercentage: 30 },
-            { skill: "Express JS", ratingPercentage: 30 },
-            { skill: "Node JS", ratingPercentage: 30 },
-            { skill: "HTML", ratingPercentage: 80 },
-            { skill: "PHP", ratingPercentage: 50 },
-            { skill: "CSS", ratingPercentage: 80 },
+            { skill: "JavaScript", ratingPercentage: 75 },
+            { skill: "React JS", ratingPercentage: 80 },
+            { skill: "Redux", ratingPercentage: 80 },
+            { skill: "Type script", ratingPercentage: 60 },
+            { skill: "Sass", ratingPercentage: 80 },
+            { skill: "HTML", ratingPercentage: 85 },
+            { skill: "Bootstrap", ratingPercentage: 75 },
+            { skill: "CSS", ratingPercentage: 85 },
           ];
         
           const projectsDetails = [
@@ -84,23 +84,23 @@ export default function Resume(props){
           const resumeDetails = [
             <div className="resume-screen-container" key="education">
               <ResumeHeading
-                heading={"Bataan Heroes College"}
-                subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-                fromDate={"2018"}
-                toDate={"2022"}
+                heading={"Azad University"}
+                subHeading={"BACHELOR OF PETROLEUM ENGIINEERING"}
+                fromDate={"2013"}
+                toDate={"2017"}
               />
         
               <ResumeHeading
-                heading={"Bagac National HighSchool"}
+                heading={"Dr.Hesabi HighSchool"}
                 subHeading={"HighSchool"}
-                fromDate={"2011"}
-                toDate={"2015"}
+                fromDate={"2009"}
+                toDate={"2013"}
               />
               <ResumeHeading
-                heading={"Parang Elementary School "}
+                heading={"Kharazmi Elementary School "}
                 subHeading={"Elementary"}
-                fromDate={"2006"}
-                toDate={"2011"}
+                fromDate={"2001"}
+                toDate={"2006"}
               />
             </div>,
         
