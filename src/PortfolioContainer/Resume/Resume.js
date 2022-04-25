@@ -38,6 +38,9 @@ export default function Resume(props){
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
+        <div className="resume-heading-link">
+          <span>{props.hrefProject ? <span>Click <a href={props.hrefProject}>here</a> to show project. </span> : "" }</span>
+        </div>
       </div>
     );
   };
@@ -65,11 +68,12 @@ export default function Resume(props){
         
           const projectsDetails = [
             {
-              title: "Personal Portfolio Website",
-              duration: { fromDate: "2021", toDate: "2022" },
+              title: "Personal Web Shop",
+              duration: { fromDate: "2022", toDate: "2022" },
               description:
-                "A Personal Portfolio website to showcase all my details and projects at one place.",
-              subHeading: "Technologies Used: React JS, Bootsrap",
+                "A Personal Web shop to showcase all my details and projects at one place.",
+              subHeading: "Technologies Used: React JS, Redux",
+              hrefProject:"https://react-shopping-site-ui-design-redux-main.vercel.app/"
             },
             {
               title: "Ecommerce Website ",
@@ -150,6 +154,7 @@ export default function Resume(props){
                   description={projectsDetails.description}
                   fromDate={projectsDetails.duration.fromDate}
                   toDate={projectsDetails.duration.toDate}
+                  hrefProject={projectsDetails.hrefProject}
                 />
               ))}
             </div>,
