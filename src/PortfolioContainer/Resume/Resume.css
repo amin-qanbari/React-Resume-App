@@ -137,9 +137,13 @@
     margin: 10px 0 0 0;
   }
   
-  .resume-heading-description {
+  .resume-heading-description , .resume-heading-link {
     font-size: 12px;
     text-align: justify;
+  }
+
+  .resume-heading-link a {
+    font-size: 14px;
   }
   
   .heading-date {

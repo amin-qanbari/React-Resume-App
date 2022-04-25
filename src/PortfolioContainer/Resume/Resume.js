@@ -5,7 +5,7 @@ import Animations from "../../utilities/Animations";
 import "./Resume.css";
 // import index from "react-typical";
 
-export default function Resume(props){
+export default function Resume(props) {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
@@ -39,7 +39,15 @@ export default function Resume(props){
           <span>{props.description ? props.description : ""}</span>
         </div>
         <div className="resume-heading-link">
-          <span>{props.hrefProject ? <span>Click <a href={props.hrefProject}>here</a> to show project. </span> : "" }</span>
+          <span>
+            {props.hrefProject ? (
+              <span>
+                Click <a href={props.hrefProject}>here</a> to show project.{" "}
+              </span>
+            ) : (
+              ""
+            )}
+          </span>
         </div>
       </div>
     );
@@ -53,169 +61,169 @@ export default function Resume(props){
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
-        
-          //here we have
-          const programmingSkillsDetails = [
-            { skill: "JavaScript", ratingPercentage: 75 },
-            { skill: "React JS", ratingPercentage: 80 },
-            { skill: "Redux", ratingPercentage: 80 },
-            { skill: "Type script", ratingPercentage: 60 },
-            { skill: "Sass", ratingPercentage: 80 },
-            { skill: "HTML", ratingPercentage: 85 },
-            { skill: "Bootstrap", ratingPercentage: 75 },
-            { skill: "CSS", ratingPercentage: 85 },
-          ];
-        
-          const projectsDetails = [
-            {
-              title: "Personal Web Shop",
-              duration: { fromDate: "2022", toDate: "2022" },
-              description:
-                "A Personal Web shop to showcase all my details and projects at one place.",
-              subHeading: "Technologies Used: React JS, Redux",
-              hrefProject:"https://react-shopping-site-ui-design-redux-main.vercel.app/"
-            },
-            {
-              title: "Ecommerce Website ",
-              duration: { fromDate: "2020", toDate: "2021" },
-              description:
-                "Online ecommerce website for showcasing and selling products onlne with payment system integration",
-              subHeading:
-                "Technologies Used: HTML, CSS, PHP, Bootstrap.",
-            },
-          ];
-        
-          const resumeDetails = [
-            <div className="resume-screen-container" key="education">
-              <ResumeHeading
-                heading={"Azad University"}
-                subHeading={"BACHELOR OF PETROLEUM ENGIINEERING"}
-                fromDate={"2013"}
-                toDate={"2017"}
-              />
-        
-              <ResumeHeading
-                heading={"Dr.Hesabi HighSchool"}
-                subHeading={"HighSchool"}
-                fromDate={"2009"}
-                toDate={"2013"}
-              />
-              <ResumeHeading
-                heading={"Kharazmi Elementary School "}
-                subHeading={"Elementary"}
-                fromDate={"2001"}
-                toDate={"2006"}
-              />
-            </div>,
-        
-            /* WORK EXPERIENCE */
-            <div className="resume-screen-container" key="work-experience">
-              <div className="experience-container">
-                <ResumeHeading
-                  heading={"Freelance"}
-                  subHeading={"FRONT END DEVELOPER"}
-                  fromDate={"2021"}
-                  toDate={"2022"}
-                />
-                <div className="experience-description">
-                  <span className="resume-description-text">
-                    Work as a Front end Developer
-                  </span>
-                </div>
-              </div>
-            </div>,
-        
-            /* PROGRAMMING SKILLS */
+
+  //here we have
+  const programmingSkillsDetails = [
+    { skill: "JavaScript", ratingPercentage: 75 },
+    { skill: "React JS", ratingPercentage: 80 },
+    { skill: "Redux", ratingPercentage: 80 },
+    { skill: "Type script", ratingPercentage: 60 },
+    { skill: "Sass", ratingPercentage: 80 },
+    { skill: "HTML", ratingPercentage: 85 },
+    { skill: "Bootstrap", ratingPercentage: 75 },
+    { skill: "CSS", ratingPercentage: 85 },
+  ];
+
+  const projectsDetails = [
+    {
+      title: "Personal Web Shop",
+      duration: { fromDate: "2022", toDate: "2022" },
+      description:
+        "A Personal Web shop to showcase all my details and projects at one place.",
+      subHeading: "Technologies Used: React JS, Redux",
+      hrefProject:
+        "https://react-shopping-site-ui-design-redux-main.vercel.app/",
+    },
+    {
+      title: "Ecommerce Website ",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "Online ecommerce website for showcasing and selling products onlne with payment system integration",
+      subHeading: "Technologies Used: HTML, CSS, PHP, Bootstrap.",
+    },
+  ];
+
+  const resumeDetails = [
+    <div className="resume-screen-container" key="education">
+      <ResumeHeading
+        heading={"Azad University"}
+        subHeading={"BACHELOR OF PETROLEUM ENGIINEERING"}
+        fromDate={"2013"}
+        toDate={"2017"}
+      />
+
+      <ResumeHeading
+        heading={"Dr.Hesabi HighSchool"}
+        subHeading={"HighSchool"}
+        fromDate={"2009"}
+        toDate={"2013"}
+      />
+      <ResumeHeading
+        heading={"Kharazmi Elementary School "}
+        subHeading={"Elementary"}
+        fromDate={"2001"}
+        toDate={"2006"}
+      />
+    </div>,
+
+    /* WORK EXPERIENCE */
+    <div className="resume-screen-container" key="work-experience">
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Freelance"}
+          subHeading={"FRONT END DEVELOPER"}
+          fromDate={"2021"}
+          toDate={"2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Work as a Front end Developer
+          </span>
+        </div>
+      </div>
+    </div>,
+
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {programmingSkillsDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
             <div
-              className="resume-screen-container programming-skills-container"
-              key="programming-skills"
-            >
-              {programmingSkillsDetails.map((skill, index) => (
-                <div className="skill-parent" key={index}>
-                  <div className="heading-bullet"></div>
-                  <span>{skill.skill}</span>
-                  <div className="skill-percentage">
-                    <div
-                      style={{ width: skill.ratingPercentage + "%" }}
-                      className="active-percentage-bar"
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>,
-        
-            /* PROJECTS */
-            <div className="resume-screen-container" key="projects">
-              {projectsDetails.map((projectsDetails, index) => (
-                <ResumeHeading
-                  key={index}
-                  heading={projectsDetails.title}
-                  subHeading={projectsDetails.subHeading}
-                  description={projectsDetails.description}
-                  fromDate={projectsDetails.duration.fromDate}
-                  toDate={projectsDetails.duration.toDate}
-                  hrefProject={projectsDetails.hrefProject}
-                />
-              ))}
-            </div>,
-        
-            /* Interests */
-            <div className="resume-screen-container" key="interests">
-              <ResumeHeading
-                heading="Teaching"
-                description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
-              />
-              <ResumeHeading
-                heading="Music"
-                description="Listening to soothing music is something i can compromise with, skimming through soothing songs is at times the best stress reliever that i can get my hands on."
-              />
-              <ResumeHeading
-                heading="Competitive Gaming"
-                description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
-              />
-            </div>,
-          ];
-        
-          const handleCarousal = (index) => {
-            let offsetHeight = 360;
-        
-            let newCarousalOffset = {
-              style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
-            };
-        
-            setCarousalOffsetStyle(newCarousalOffset);
-            setSelectedBulletIndex(index);
-          };
-          const getBullets = () => {
-            return resumeBullets.map((bullet, index) => (
-              <div
-                onClick={() => handleCarousal(index)}
-                className={
-                  index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
-                }
-                key={index}
-              >
-                <img
-                  className="bullet-logo"
-                  src={require(`../../assets/Resume/${bullet.logoSrc}`)}
-                 alt="bullet-logo"
-                />
-                <span className="bullet-label">{bullet.label}</span>
-              </div>
-            ));
-          };
-          const getResumeScreens = () => {
-            return (
-              <div
-                style={carousalOffsetStyle.style}
-                className="resume-details-carousal"
-              >
-                {resumeDetails.map((ResumeDetail) => ResumeDetail)}
-              </div>
-            );
-          };
-    return(
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
+
+    /* PROJECTS */
+    <div className="resume-screen-container" key="projects">
+      {projectsDetails.map((projectsDetails, index) => (
+        <ResumeHeading
+          key={index}
+          heading={projectsDetails.title}
+          subHeading={projectsDetails.subHeading}
+          description={projectsDetails.description}
+          fromDate={projectsDetails.duration.fromDate}
+          toDate={projectsDetails.duration.toDate}
+          hrefProject={projectsDetails.hrefProject}
+        />
+      ))}
+    </div>,
+
+    /* Interests */
+    <div className="resume-screen-container" key="interests">
+      <ResumeHeading
+        heading="Teaching"
+        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+      />
+      <ResumeHeading
+        heading="Music"
+        description="Listening to soothing music is something i can compromise with, skimming through soothing songs is at times the best stress reliever that i can get my hands on."
+      />
+      <ResumeHeading
+        heading="Competitive Gaming"
+        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+      />
+    </div>,
+  ];
+
+  const handleCarousal = (index) => {
+    let offsetHeight = 360;
+
+    let newCarousalOffset = {
+      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
+    };
+
+    setCarousalOffsetStyle(newCarousalOffset);
+    setSelectedBulletIndex(index);
+  };
+  const getBullets = () => {
+    return resumeBullets.map((bullet, index) => (
       <div
+        onClick={() => handleCarousal(index)}
+        className={
+          index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
+        }
+        key={index}
+      >
+        <img
+          className="bullet-logo"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+          alt="bullet-logo"
+        />
+        <span className="bullet-label">{bullet.label}</span>
+      </div>
+    ));
+  };
+  const getResumeScreens = () => {
+    return (
+      <div
+        style={carousalOffsetStyle.style}
+        className="resume-details-carousal"
+      >
+        {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+      </div>
+    );
+  };
+  return (
+    <div
       className="resume-container screen-container fade-in"
       id={props.id || ""}
     >
@@ -234,4 +242,4 @@ export default function Resume(props){
       </div>
     </div>
   );
-};
+}
