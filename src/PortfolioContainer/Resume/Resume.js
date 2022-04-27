@@ -66,12 +66,12 @@ export default function Resume(props) {
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 75 },
     { skill: "React JS", ratingPercentage: 80 },
+    { skill: "React Hooks", ratingPercentage: 85 },
     { skill: "Redux", ratingPercentage: 80 },
-    { skill: "Type script", ratingPercentage: 60 },
     { skill: "Sass", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 85 },
+    { skill: "HTML , CSS", ratingPercentage: 85 },
     { skill: "Bootstrap", ratingPercentage: 75 },
-    { skill: "CSS", ratingPercentage: 85 },
+    { skill: "Responsive Design", ratingPercentage: 90 },
   ];
 
   const projectsDetails = [
