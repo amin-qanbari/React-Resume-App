@@ -21,9 +21,10 @@ export default function AboutMe(props) {
         "Bootstrap",
         "Javascript",
         "React.js",
+        "React Hooks",
         "Redux",
-        "Managing database",
-        "Responsive design"
+        "Responsive Design",
+        "Git"
       ],
       heading: "Here are a Few Highlights:",
     },
