@@ -67,6 +67,11 @@ background-position: center;
 transform: scale(1.07);
 transition: 1s ease-out;
 }
+
+.colz .colz-icon a i:hover {
+    color:var(--dark-orange) ;
+}
+
 .colz .colz-icon i{
     color: white;
     padding: 8px;
