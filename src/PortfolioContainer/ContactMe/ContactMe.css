@@ -134,6 +134,7 @@
   }
   .col i:hover {
     transform: scale(1.5);
+    color:var(--dark-orange) ;
   }
   
   @media screen and (min-width: 940px) {
