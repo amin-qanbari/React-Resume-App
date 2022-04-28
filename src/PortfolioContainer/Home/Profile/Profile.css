@@ -68,17 +68,16 @@ transform: scale(1.07);
 transition: 1s ease-out;
 }
 
-.colz .colz-icon a i:hover {
-    color:var(--dark-orange) ;
-}
 
 .colz .colz-icon i{
     color: white;
     padding: 8px;
     padding-left: 0px;
+    transition: ease 0.15s;
 }
 .colz .colz-icon i:hover{
     transform: scale(1.5);
+    color:var(--dark-orange) ;
 }
 
 @media screen and (max-width: 1110px) {
