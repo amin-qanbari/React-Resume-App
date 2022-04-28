@@ -42,7 +42,11 @@ const Profile = () => {
                     1000,
                     "Web Programing & Design 💻",
                     1000,
-                    "React.js  🌐",
+                    "React.js 🌐",
+                    1000,
+                    "React Hooks 🌐",
+                    1000,
+                    "Context Api 😎",
                     1000,
                     "Redux 😎",
                     1000,
@@ -56,7 +60,7 @@ const Profile = () => {
                     1000,
                     "REST api 😎 ",
                     1000,
-                    "Git, GitHub 😎",
+                    "Git 😎",
                     1000,
                   ]}
                 />
