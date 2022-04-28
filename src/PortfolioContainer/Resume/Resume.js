@@ -84,7 +84,14 @@ export default function Resume(props) {
       hrefProject:
         "https://react-shopping-site-ui-design-redux-main.vercel.app/",
     },
-
+    {
+      title: "Online Crypto Currency",
+      duration: { fromDate: "2022", toDate: "2022" },
+      description:
+        "In this mini-project, I created an app with a real API with which we can see the current price, cap-market, price change percentage, etc.",
+      subHeading: "Technologies Used: React JS, Axios ",
+      hrefProject: "https://online-crypto-currency.vercel.app/",
+    },
   ];
 
   const resumeDetails = [
