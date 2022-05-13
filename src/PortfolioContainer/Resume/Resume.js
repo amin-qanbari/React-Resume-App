@@ -79,7 +79,7 @@ export default function Resume(props) {
       title: "Hacker News Api",
       duration: { fromDate: "2022", toDate: "2022" },
       description:
-        "Learn how to use APIs with React in this intermediate tutorial. We're going to be creating a small application in React that calls the Hacker News API. We'll be looking at React memo, Axios (to make API calls), Material-UI, and finally we will test our work using React .",
+        "In this project we use APIs with React. We're going to be creating a small application in React that calls the Hacker News API. We'll be looking at React memo, Axios (to make API calls), Material-UI, and finally we will test our work using React .",
       subHeading: "Technologies Used: React JS, Context , Material-UI , Axios",
       hrefProject:
         "https://news-api-application-react-and-api-s-material-ui.vercel.app/",
